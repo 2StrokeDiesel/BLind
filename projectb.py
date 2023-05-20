@@ -1,7 +1,6 @@
 import pyautogui
 import time
 
-
 print("""
      ...     ..            ..    .                     ..
   .=*8888x <"?88h.   x .d88"    @88>                 dF
@@ -20,13 +19,13 @@ print("""
 #shits fucked stand by
 
 print("Same shit, use this as you will \n \n")
-a = input ( "Modules: spamming \n" )
-if a=='spamming' or a=='Spamming' or 'SPAMMING':
+a = input ( "Modules: Spamming, Cli Programs  \n" )
+if a==("Spamming"):
   x = input("Text to spam \n:")
   z = input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")
   y = input(" General mode,  Discord mode,  Alarm mode,  Kamari mode \nMode selection:")
   
-  if y =='discord' or y == 'Discord' or y== 'DISCORD':
+  if y ==("Discord"):
     pyautogui.click(900,1000)
     time.sleep(0.3)
     while True:
@@ -34,13 +33,13 @@ if a=='spamming' or a=='Spamming' or 'SPAMMING':
         time.sleep((z))
         pyautogui.press("enter")
 
-if y =='general' or y =='general' or y==' General': 
+  if y ==("general"): 
     while True:
         pyautogui.typewrite((x))
         time.sleep((z))
         pyautogui.press("enter")
 
-if y == ('kamarimode'):
+  if y == ("Kamari mode"):
     pyautogui.click(900,1000)
     time.sleep(0.3)
     while True:
@@ -49,7 +48,7 @@ if y == ('kamarimode'):
         pyautogui.press("enter")
         pyautogui.press("enter")        
 
-if y =='alarm' or 'Alarm' or 'ALARM':
+  if y ==("Alarm"):
     import datetime, time
     print("Hours in 24 hour format!")
     o = input("Hour of start \n:")
@@ -72,7 +71,12 @@ if y =='alarm' or 'Alarm' or 'ALARM':
       pyautogui.typewrite((x))
       time.sleep((z))
       pyautogui.press("enter")
-  
-  
-  
-  
+#your mother likes this program
+if a ==("Cli Programs") or ("cli programs"):
+  pyautogui.click(150,1060)
+  time.sleep(0.5)
+  pyautogui.typewrite (" command prompt ")
+  pyautogui.press("enter")
+  time.sleep(1)
+  pyautogui.typewrite ('spotdl --audio youtube-music --format flac download ')
+
