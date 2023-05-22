@@ -1,7 +1,6 @@
 import pyautogui
 import time
 
-
 print("""
      ...     ..            ..    .                     ..
   .=*8888x <"?88h.   x .d88"    @88>                 dF
@@ -17,16 +16,35 @@ print("""
         ^"**""          "%       ""                     ""
 
 """)
-#shits fucked stand by
 
-print("Same shit, use this as you will \n \n")
-a = input ( "Modules: spamming \n" )
-if a=='spamming' or a=='Spamming' or 'SPAMMING':
+print("------------------------------------------------------------------------------------")
+#shits fucked stand by
+print("""
+ _______ __     __ __               ___              __             __
+|     __|  |--.|__|  |_.-----.    .'  _|.--.--.----.|  |--.-----.--|  |
+|__     |     ||  |   _|__ --|    |   _||  |  |  __||    <|  -__|  _  |
+|_______|__|__||__|____|_____|    |__|  |_____|____||__|__|_____|_____|
+
+        __                  __      __
+.-----.|  |_.---.-.-----.--|  |    |  |--.--.--.
+|__ --||   _|  _  |     |  _  |    |  _  |  |  |
+|_____||____|___._|__|__|_____|    |_____|___  |
+                                         |_____|""")
+
+
+a = input ("""Modules:
+1)Spamming, 
+2)Cli Programs 
+3)Clock
+Select a number:""")
+
+a_int= int(a)
+if a_int== (1):
   x = input("Text to spam \n:")
   z = input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")
   y = input(" General mode,  Discord mode,  Alarm mode,  Kamari mode \nMode selection:")
   
-  if y =='discord' or y == 'Discord' or y== 'DISCORD':
+  if y ==("Discord"):
     pyautogui.click(900,1000)
     time.sleep(0.3)
     while True:
@@ -34,13 +52,13 @@ if a=='spamming' or a=='Spamming' or 'SPAMMING':
         time.sleep((z))
         pyautogui.press("enter")
 
-if y =='general' or y =='general' or y==' General': 
+  if y ==("general"): 
     while True:
         pyautogui.typewrite((x))
         time.sleep((z))
         pyautogui.press("enter")
 
-if y == ('kamarimode'):
+  if y == ("Kamari mode"):
     pyautogui.click(900,1000)
     time.sleep(0.3)
     while True:
@@ -49,7 +67,7 @@ if y == ('kamarimode'):
         pyautogui.press("enter")
         pyautogui.press("enter")        
 
-if y =='alarm' or 'Alarm' or 'ALARM':
+  if y ==("Alarm"):
     import datetime, time
     print("Hours in 24 hour format!")
     o = input("Hour of start \n:")
@@ -72,7 +90,36 @@ if y =='alarm' or 'Alarm' or 'ALARM':
       pyautogui.typewrite((x))
       time.sleep((z))
       pyautogui.press("enter")
-  
-  
-  
-  
+
+if a_int == (2):
+  pos=input("""
+1)spotdl-flac-script
+
+Select Number:
+""")
+  pos_int=int(pos)
+  if pos_int== (1):
+    pyautogui.click(150,1060)
+    time.sleep(0.5)
+    pyautogui.typewrite (" command prompt ")
+    pyautogui.press("enter")
+    time.sleep(1)
+    pyautogui.typewrite ('spotdl --audio youtube-music --format flac download ')
+
+if a_int ==(3):
+  import os
+  import datetime
+  import pyfiglet
+  import time
+  from pyfiglet import Figlet
+  os.system('cls')
+  while True:
+    p= datetime.datetime.now()
+    f= (datetime.datetime.strftime(p, '%H : %M : %S'))
+    o_u = f
+    i= Figlet(font='letters')
+    print (i.renderText((o_u)), end="")
+    print('\033[6A\033[2K', end='')
+    time.sleep(1)
+    #The \033[5A\033[2K allows for refresh with pyfiglet in without clearing, each font needs a differnt amount of room for clear so, changing the number 5a will change how many lines
+    #it clears, this is something that will needed to be editted by the eu but its not a big deal, maybe figure out a way to fix in future?
