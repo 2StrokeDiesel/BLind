@@ -120,7 +120,7 @@ Select Number """))
       if pop==(3):
         oop=("spotdl --audio youtube-music --format flac download ")
       os.system("cls")
-      pyautogui.click(150,1060)
+      pyautogui.press("super")
       time.sleep(0.5)
       pyautogui.typewrite (" command prompt ")
       pyautogui.press("enter")
@@ -159,7 +159,7 @@ Select Number:"""))
     os.system('yt-dlp' + fox + xof)
    
     
-  
+#patwang  
 
 # This a fukcing clock
 if a_int ==(3):
@@ -179,3 +179,37 @@ if a_int ==(3):
     time.sleep(1)
     #The \033[5A\033[2K allows for refresh with pyfiglet in without clearing, each font needs a differnt amount of room for clear so, changing the number 5a will change how many lines
     #it clears, this is something that will needed to be editted by the eu but its not a big deal, maybe figure out a way to fix in future?
+    
+    #Not added to main list, simply for personal use, this can also be editted to whatever you want 
+if a_int==(77):
+  
+    import pyautogui
+    pyautogui.press("super")
+    time.sleep(0.25)
+    pyautogui.typewrite("pia")
+    time.sleep(0.25)
+    pyautogui.press("enter")
+    time.sleep(1)
+    pyautogui.click (900,450)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #Credits- One dumb motherfucker
+    #everbody else proably giving me ideas, friends that cant remeber commands worth shit
+    #hooked on a feeling for making me feeling productive 
+    #https://tinyurl.com/bdfvbf8t
+    #peace tea, good shit
+    
+    #RG9uJ3QgeW91IGtub3cgSSdtIHN0aWxsIHN0YW5kaW4nIGJldHRlciB0aGFuIEkgZXZlciBkaWQ/Ckxvb2tpbicgbGlrZSBhIHRydWUgc3Vydml2b3IsIGZlZWxpbicgbGlrZSBhIGxpdHRsZSBraWQKQW5kIEknbSBzdGlsbCBzdGFuZGluJyBhZnRlciBhbGwgdGhpcyB0aW1lClBpY2tpbicgdXAgdGhlIHBpZWNlcyBvZiBteSBsaWZlIHdpdGhvdXQgeW91IG9uIG15IG1pbmQKCmh0dHBzOi8vaW1ndXIuY29tL2EvelB1VHdNdQ==
