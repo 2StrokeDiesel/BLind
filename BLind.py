@@ -30,21 +30,38 @@ print("""
 |_____||____|___._|__|__|_____|    |_____|___  |
                                          |_____|""")
 
+kok =int(input("""Select Opperating system (wont be used for all modules)
+1) Windows
+2) Mac
+3) Linux(Highly Unlikley most of this works and what does will be on ubuntu)
+
+Input Number:"""))
+print("""\n \n \n \n""")
 
 a = input ("""Modules:
-1)Spamming, 
+1)Spamming
 2)Cli Programs 
 3)Clock
 Select a number:""")
+print("""\n \n \n \n""")
 # Spamming tools
 a_int= int(a)
 if a_int== (1):
   import pyautogui
   x = input("Text to spam \n:")
   z = input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")
-  y = input(" General mode,  Discord mode,  Alarm mode,  Kamari mode \nMode selection:")
+  print("All of these have a 3 second delay before they start")
+  y = int(input("""
+1) Discord mode
+2) General mode
+3) Alarm mode
+4) Kamari mode
+5) Help \nMode selection:"""))
+  print("""\n \n \n \n""")
   
-  if y ==("Discord"):
+  
+  if y ==(1):
+    time.sleep(3)
     pyautogui.click(900,1000)
     time.sleep(0.3)
     while True:
@@ -52,13 +69,15 @@ if a_int== (1):
         time.sleep((z))
         pyautogui.press("enter")
 
-  if y ==("general"): 
+  if y ==(2): 
+    time.sleep(3)
     while True:
         pyautogui.typewrite((x))
         time.sleep((z))
         pyautogui.press("enter")
 
-  if y == ("Kamari mode"):
+  if y == (4):
+    time.sleep(3)
     pyautogui.click(900,1000)
     time.sleep(0.3)
     while True:
@@ -67,7 +86,8 @@ if a_int== (1):
         pyautogui.press("enter")
         pyautogui.press("enter")        
 
-  if y ==("Alarm"):
+  if y ==(3):
+    time.sleep(3)
     import datetime, time
     print("Hours in 24 hour format!")
     o = input("Hour of start \n:")
@@ -90,7 +110,13 @@ if a_int== (1):
       pyautogui.typewrite((x))
       time.sleep((z))
       pyautogui.press("enter")
-
+      
+    if y ==(5):
+      print("""\n \n \n \n""")
+    print("//Discord Mode \nThis version clicks on a specific area on the screen (900,1000 for those wonderin) and allows for discord to easily be spammed without needing to be clicked on after, this is for 1080p monitors, and given thats what the majority have including me thats what I set it to be for by default though it can always be changed \n \n" )
+    print("//General Mode \nVery simple module of this spammer, takes input and the time delay and starts repeating typing and enter 3 secodns after the input to start \n \n")  
+    print("//Alarm Mode \nTakes the user input for a specific time (hours and minutes) of when to start, this is determined by the package date and time which is required for this to work, this time then has the current time subtracted this will give time time until the spam starts, the user is also asked how long to spamm, this time is in minutes and is easily controlled by a simple ineger entered \n \n")
+    print("//Kamari Mode \nSpecial mode for a friend that presess enter twice for japanese keyboards on mac")
 
 
 
@@ -111,7 +137,18 @@ Select Number:""")
 1) mp3
 2) m4a
 3) flac
+4) Help
 Select Number """))
+      if pop==(4):
+       print("""//Mp3 
+Small File size, but lesser quality
+
+//m4a 
+Medium file size, better quality
+
+//flac,
+compressed lossless, large file size""")
+      
       fax=input("Spotify Link:")
       if pop==(1):
         oop=(" spotdl --audio youtube-music --format mp3 download ")
@@ -131,8 +168,13 @@ Select Number """))
   
 
   if pos_int==(2):
-    os.system("cls")
-    os.system("ping 1.1.1.1 -t")
+    if kok==(1):
+      os.system("cls")
+      os.system("ping 1.1.1.1 -t")
+    if kok:={2,3}:
+      os.system("clear")
+      os.system("ping 1.1.1.1")
+  
   
   if pos_int==(3):
     import yt_dlp
@@ -157,6 +199,7 @@ Select Number:"""))
       fox=(" --remux-video mp4")
     os.system("cls")
     os.system('yt-dlp' + fox + xof)
+    
    
     
 #patwang  
@@ -191,6 +234,23 @@ if a_int==(77):
     pyautogui.press("enter")
     time.sleep(1)
     pyautogui.click (900,450)
+    
+if a_int== (88):
+  print("File has to be in BLind folder, otherwise idk how its going to work!")
+  zyc= input("File Name (NOT EXTENSION!)\n Input Filename:")
+  print("\n")
+  xyc= input("File extension (Type as .txt or .mp4) *ADD A SPACE ON END \n Input Extension:")
+  print("\n")
+  xyz=int(input("""How Many Coppies?
+Input Number:"""))
+  print("\n")
+  iou=0
+  iou_nonint=("0")
+  for iou in range(xyz):
+    os.system('copy ' +  zyc+xyc  +  zyc+str(iou)+xyc)
+    iou +=1
+    
+  
     
     
     
