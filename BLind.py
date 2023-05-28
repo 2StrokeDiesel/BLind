@@ -42,6 +42,7 @@ a = input ("""Modules:
 1)Spamming
 2)Cli Programs 
 3)Clock
+4)File Duplicator
 Select a number:""")
 print("""\n \n \n \n""")
 # Spamming tools
@@ -223,19 +224,13 @@ if a_int ==(3):
     #The \033[5A\033[2K allows for refresh with pyfiglet in without clearing, each font needs a differnt amount of room for clear so, changing the number 5a will change how many lines
     #it clears, this is something that will needed to be editted by the eu but its not a big deal, maybe figure out a way to fix in future?
     
-    #Not added to main list, simply for personal use, this can also be editted to whatever you want 
-if a_int==(77):
-  
-    import pyautogui
-    pyautogui.press("super")
-    time.sleep(0.25)
-    pyautogui.typewrite("pia")
-    time.sleep(0.25)
-    pyautogui.press("enter")
-    time.sleep(1)
-    pyautogui.click (900,450)
-    
-if a_int== (88):
+   
+   
+   
+   
+    #File Duper
+if a_int== (4):
+  print("If for some god forsaken reason you need this hats off, here you go \n \n")
   print("File has to be in BLind folder, otherwise idk how its going to work!")
   zyc= input("File Name (NOT EXTENSION!)\n Input Filename:")
   print("\n")
@@ -250,11 +245,50 @@ Input Number:"""))
     os.system('copy ' +  zyc+xyc  +  zyc+str(iou)+xyc)
     iou +=1
     
+if a_int==(5):
+  import requests
+  print("\t\tWelcome to the Weather Forecaster!\n\n")
+  print("This uses wttr.in, credit goes to them for this amazing service\n\n")
+ 
+  city_name = input("Enter the name of the City : ")
+  print("\n\n")
+ 
+# Function to Generate Report
+  def Gen_report(C):
+      url = 'https://wttr.in/{}'.format(C)
+      try:
+          data = requests.get(url)
+          T = data.text
+      except:
+          T = "Error Occurred"
+      print(T)
+     
+  Gen_report(city_name)
+
+    #Not added to main list, simply for personal use or experminetal, doesnt always work all possible, this can also be editted to whatever you want 
+if a_int==(77):
   
-    
-    
-    
-    
+    import pyautogui
+    pyautogui.press("super")
+    time.sleep(0.25)
+    pyautogui.typewrite("pia")
+    time.sleep(0.25)
+    pyautogui.press("enter")
+    time.sleep(1)
+    pyautogui.click (900,450)
+
+if a_int==(22):
+  import os.path
+  iop = os.path.isfile("rain.sh")
+  if iop==True:
+    if kok == (1):
+      os.system("bash rain.sh")
+    if kok==(2):
+      os.system("sh rain.sh")
+    if kok==(3):
+      os.system("./rain.sh")
+  else:
+    os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
     
     
     
