@@ -137,8 +137,8 @@ Select Module:""")
 2) m4a
 3) flac
 4) Help
-Select Number """)
-      if pop==(4):
+Select Format """)
+      if pop=="4" or pop== "help" or pop=="Help":
        print("""//Mp3 
 Small File size, but lesser quality
 
@@ -149,11 +149,11 @@ Medium file size, better quality
 compressed lossless, large file size""")
       
       fax=input("Spotify Link:")
-      if pop==(1):
-        oop=(" spotdl --audio youtube-music --format mp3 download ")
-      if pop==(2):
+      if pop=="1" or pop=="mp3":
+        oop=("spotdl --audio youtube-music --format mp3 download ")
+      if pop=="2" or pop=="m4a":
         oop=("spotdl --audio youtube-music --format m4a download ")
-      if pop==(3):
+      if pop=="3" or pop=="flac":
         oop=("spotdl --audio youtube-music --format flac download ")
       os.system("cls")
       pyautogui.press("super")
@@ -166,7 +166,7 @@ compressed lossless, large file size""")
       
   
 
-  if pos==(2):
+  if pos=="2" or pos=="Ping-Test" or pos=="ping-test" or pos=="Ping-test":
     if kok==(1):
       os.system("cls")
       os.system("ping 1.1.1.1 -t")
@@ -175,7 +175,7 @@ compressed lossless, large file size""")
       os.system("ping 1.1.1.1")
   
   
-  if pos==(3):
+  if pos=="3" or pos=="yt-dlp" or "Yt-dlp":
     import yt_dlp
     os.system('cls')
     tot=int(input("""File type:
@@ -204,7 +204,7 @@ Select Number:"""))
 #patwang  
 
 # This a fuking clock
-if a ==(3):
+if a =="3" or a=="Clock" or a=="clock":
   import pyautogui
   import datetime
   import pyfiglet
@@ -227,7 +227,7 @@ if a ==(3):
    
    
     #File Duper
-if a== (4):
+if a=="4" or a=="Duplicator" or a=="file Duplicator" or a== "File Duplicator" or a=="File duplicator" or a=="duper" or a=="file duplicator":
   print("If for some god forsaken reason you need this hats off, here you go \n \n")
   print("File has to be in BLind folder, otherwise idk how its going to work!")
   zyc= input("File Name (NOT EXTENSION!)\n Input Filename:")
@@ -247,7 +247,7 @@ Input Number:"""))
     
 
 #Weather 
-if a==(5):
+if a=="5" or a=="Weather" or a=="weather":
   import requests
   print("\t\tWelcome to the Weather Forecaster!\n\n")
   print("This uses wttr.in, credit goes to them for this amazing service\n\n")
@@ -268,7 +268,7 @@ if a==(5):
   Gen_report(city_name)
 
     #Not added to main list, simply for personal use or experminetal, doesnt always work all possible, this can also be editted to whatever you want 
-if a==(77):
+if a=="77":
   
     import pyautogui
     pyautogui.press("super")
@@ -279,7 +279,7 @@ if a==(77):
     time.sleep(1)
     pyautogui.click (900,450)
 
-if a==(22):
+if a=="22" or "screensaver":
   import os.path
   iop = os.path.isfile("rain.sh")
   if iop==True:
