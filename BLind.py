@@ -76,7 +76,7 @@ if a=="1" or a== "Spamming" or a== "spamming":
         time.sleep((z))
         pyautogui.press("enter")
 
-  if y == (4):
+  if y == "4" or y== "Kamari Mode" or y== "Kamari" or y== "kamari" or y== "kamari mode" or y=="Kamari Mode":
     time.sleep(3)
     pyautogui.click(900,1000)
     time.sleep(0.3)
@@ -86,7 +86,7 @@ if a=="1" or a== "Spamming" or a== "spamming":
         pyautogui.press("enter")
         pyautogui.press("enter")        
 
-  if y ==(3):
+  if y =="3" or y== "alarm" or y== "Alarm" or y== "alarm mode" or y== "Alarm mode" or y== "Alarm Mode":
     time.sleep(3)
     import datetime, time
     print("Hours in 24 hour format!")
@@ -111,7 +111,7 @@ if a=="1" or a== "Spamming" or a== "spamming":
       time.sleep((z))
       pyautogui.press("enter")
       
-    if y ==(5):
+    if y =="5" or y=="Help" or y=="help" or y== "HELP":
       print("""\n \n \n \n""")
     print("//Discord Mode \nThis version clicks on a specific area on the screen (900,1000 for those wonderin) and allows for discord to easily be spammed without needing to be clicked on after, this is for 1080p monitors, and given thats what the majority have including me thats what I set it to be for by default though it can always be changed \n \n" )
     print("//General Mode \nVery simple module of this spammer, takes input and the time delay and starts repeating typing and enter 3 secodns after the input to start \n \n")  
