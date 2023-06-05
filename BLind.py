@@ -60,7 +60,7 @@ if a=="1" or a== "Spamming" or a== "spamming":
   print("""\n \n \n \n""")
   
   
-  if y =="1" or y=="Spamming" or y=="spamming":
+  if y =="1" or y=="Discord" or y=="discord" or y=="Discord Mode" or y== "Discord mode" or y== "discord mode":
     time.sleep(3)
     pyautogui.click(900,1000)
     time.sleep(0.3)
@@ -69,7 +69,7 @@ if a=="1" or a== "Spamming" or a== "spamming":
         time.sleep((z))
         pyautogui.press("enter")
 
-  if y ==(2): 
+  if y =="2" or y== "General" or y== "general" or y== "General Mode" or y== "general mode" or y== "General mode": 
     time.sleep(3)
     while True:
         pyautogui.typewrite((x))
