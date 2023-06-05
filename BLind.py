@@ -205,7 +205,7 @@ Select Number:"""))
     
 #patwang  
 
-# This a fukcing clock
+# This a fuking clock
 if a_int ==(3):
   import pyautogui
   import datetime
@@ -240,11 +240,15 @@ if a_int== (4):
 Input Number:"""))
   print("\n")
   iou=0
-  iou_nonint=("0")
   for iou in range(xyz):
-    os.system('copy ' +  zyc+xyc  +  zyc+str(iou)+xyc)
+    if kok==(1):
+      os.system('copy ' +  zyc+xyc  +  zyc+str(iou)+xyc)
+    if kok==(3):
+      os.system('cp ' +  zyc+xyc  +  zyc+str(iou)+xyc)
     iou +=1
     
+
+#Weather 
 if a_int==(5):
   import requests
   print("\t\tWelcome to the Weather Forecaster!\n\n")
