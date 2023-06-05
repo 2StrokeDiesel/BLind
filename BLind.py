@@ -50,7 +50,7 @@ a_int= int(a)
 if a_int== (1):
   import pyautogui
   x = input("Text to spam \n:")
-  z = input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")
+  z = int(float(input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")))
   print("All of these have a 3 second delay before they start")
   y = int(input("""
 1) Discord mode
@@ -286,9 +286,17 @@ if a_int==(22):
     if kok==(2):
       os.system("sh rain.sh")
     if kok==(3):
+      os.system("chmod +x ./rain.sh")
       os.system("./rain.sh")
   else:
     os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
+    if kok == (1):
+      os.system("bash rain.sh")
+    if kok==(2):
+      os.system("sh rain.sh")
+    if kok==(3):
+      os.system("chmod +x ./rain.sh")
+      os.system("./rain.sh")
     
     
     
