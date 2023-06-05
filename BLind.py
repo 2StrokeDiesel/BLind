@@ -60,7 +60,7 @@ if a=="1" or a== "Spamming" or a== "spamming":
   print("""\n \n \n \n""")
   
   
-  if y ==(1):
+  if y =="1" or y=="Spamming" or y=="spamming":
     time.sleep(3)
     pyautogui.click(900,1000)
     time.sleep(0.3)
