@@ -46,8 +46,7 @@ a = input ("""Modules:
 Select a number:""")
 print("""\n \n \n \n""")
 # Spamming tools
-a_int= int(a)
-if a_int== (1):
+if a=="1" or a== "Spamming" or a== "spamming":
   import pyautogui
   x = input("Text to spam \n:")
   z = int(float(input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")))
@@ -122,7 +121,7 @@ if a_int== (1):
 
 
 #Command line tools / programs
-if a_int == (2):
+if a == (2):
   import pyautogui
   import os
 
@@ -206,7 +205,7 @@ Select Number:"""))
 #patwang  
 
 # This a fuking clock
-if a_int ==(3):
+if a ==(3):
   import pyautogui
   import datetime
   import pyfiglet
@@ -229,7 +228,7 @@ if a_int ==(3):
    
    
     #File Duper
-if a_int== (4):
+if a== (4):
   print("If for some god forsaken reason you need this hats off, here you go \n \n")
   print("File has to be in BLind folder, otherwise idk how its going to work!")
   zyc= input("File Name (NOT EXTENSION!)\n Input Filename:")
@@ -249,7 +248,7 @@ Input Number:"""))
     
 
 #Weather 
-if a_int==(5):
+if a==(5):
   import requests
   print("\t\tWelcome to the Weather Forecaster!\n\n")
   print("This uses wttr.in, credit goes to them for this amazing service\n\n")
@@ -270,7 +269,7 @@ if a_int==(5):
   Gen_report(city_name)
 
     #Not added to main list, simply for personal use or experminetal, doesnt always work all possible, this can also be editted to whatever you want 
-if a_int==(77):
+if a==(77):
   
     import pyautogui
     pyautogui.press("super")
@@ -281,7 +280,7 @@ if a_int==(77):
     time.sleep(1)
     pyautogui.click (900,450)
 
-if a_int==(22):
+if a==(22):
   import os.path
   iop = os.path.isfile("rain.sh")
   if iop==True:
