@@ -121,7 +121,7 @@ if a=="1" or a== "Spamming" or a== "spamming":
 
 
 #Command line tools / programs
-if a == (2):
+if a == "2" or a=="Cli program" or a== "cli programs" or a== "cli" or a== "Cli":
   import pyautogui
   import os
 
