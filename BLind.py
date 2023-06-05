@@ -130,15 +130,14 @@ if a == (2):
 2)ping-test
 3)yt-dlp-scripts
 
-Select Number:""")
-  pos_int=int(pos)
-  if pos_int== (1):
-      pop=int(input("""File Type:
+Select Module:""")
+  if pos=="spotdl-scripts" or pos=="Spotdl-scripts" or pos=="spotdl" or pos== "Spotdl" or pos=="Spotdl-Scripts" or pos=="spotdl-Scripts":
+      pop=input("""File Type:
 1) mp3
 2) m4a
 3) flac
 4) Help
-Select Number """))
+Select Number """)
       if pop==(4):
        print("""//Mp3 
 Small File size, but lesser quality
@@ -167,7 +166,7 @@ compressed lossless, large file size""")
       
   
 
-  if pos_int==(2):
+  if pos==(2):
     if kok==(1):
       os.system("cls")
       os.system("ping 1.1.1.1 -t")
@@ -176,7 +175,7 @@ compressed lossless, large file size""")
       os.system("ping 1.1.1.1")
   
   
-  if pos_int==(3):
+  if pos==(3):
     import yt_dlp
     os.system('cls')
     tot=int(input("""File type:
