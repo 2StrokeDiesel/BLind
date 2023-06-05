@@ -50,7 +50,7 @@ a_int= int(a)
 if a_int== (1):
   import pyautogui
   x = input("Text to spam \n:")
-  z = input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")
+  z = int(float(input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")))
   print("All of these have a 3 second delay before they start")
   y = int(input("""
 1) Discord mode
@@ -205,7 +205,7 @@ Select Number:"""))
     
 #patwang  
 
-# This a fukcing clock
+# This a fuking clock
 if a_int ==(3):
   import pyautogui
   import datetime
@@ -240,11 +240,15 @@ if a_int== (4):
 Input Number:"""))
   print("\n")
   iou=0
-  iou_nonint=("0")
   for iou in range(xyz):
-    os.system('copy ' +  zyc+xyc  +  zyc+str(iou)+xyc)
+    if kok==(1):
+      os.system('copy ' +  zyc+xyc  +  zyc+str(iou)+xyc)
+    if kok==(3):
+      os.system('cp ' +  zyc+xyc  +  zyc+str(iou)+xyc)
     iou +=1
     
+
+#Weather 
 if a_int==(5):
   import requests
   print("\t\tWelcome to the Weather Forecaster!\n\n")
@@ -286,9 +290,17 @@ if a_int==(22):
     if kok==(2):
       os.system("sh rain.sh")
     if kok==(3):
+      os.system("chmod +x ./rain.sh")
       os.system("./rain.sh")
   else:
     os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
+    if kok == (1):
+      os.system("bash rain.sh")
+    if kok==(2):
+      os.system("sh rain.sh")
+    if kok==(3):
+      os.system("chmod +x ./rain.sh")
+      os.system("./rain.sh")
     
     
     
