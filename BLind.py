@@ -30,12 +30,12 @@ print("""
 |_____||____|___._|__|__|_____|    |_____|___  |
                                          |_____|""")
 
-kok =int(input("""Select Opperating system (wont be used for all modules)
+kok = input("""Select Opperating system (wont be used for all modules)
 1) Windows
 2) Mac
-3) Linux(Highly Unlikley most of this works and what does will be on ubuntu)
+3) Linux(Highly Unlikley most of this works and what does will be on fedora)
 
-Input Number:"""))
+Input OS:""")
 print("""\n \n \n \n""")
 
 a = input ("""Modules:
@@ -155,35 +155,44 @@ compressed lossless, large file size""")
         oop=("spotdl --audio youtube-music --format m4a download ")
       if pop=="3" or pop=="flac":
         oop=("spotdl --audio youtube-music --format flac download ")
-      os.system("cls")
+      if kok=="1" or kok=="Windows" or kok=="windows":
+        os.system("cls")
+      if kok=="2" or kok=="3" or kok== "mac" or kok=="Mac" or kok=="Linux" or kok=="linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch":
+        os.system("clear")
       pyautogui.press("super")
       time.sleep(0.5)
-      pyautogui.typewrite (" command prompt ")
+      pyautogui.typewrite ("terminal")
       pyautogui.press("enter")
-      time.sleep(1)
+      time.sleep(5)
       pyautogui.typewrite(oop + fax)
       
       
   
 
   if pos=="2" or pos=="Ping-Test" or pos=="ping-test" or pos=="Ping-test":
-    if kok==(1):
+    if kok=="1" or kok=="windows" or kok== "Windows":
       os.system("cls")
       os.system("ping 1.1.1.1 -t")
-    if kok:={2,3}:
+    
+    if kok== "2" or kok=="3" or kok== "mac" or kok=="Mac" or kok=="Linux" or kok=="linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch":
+      if kok=="arch":
+        print("why they fuck are you using this if your on arch?, anyway continue")
+        time.sleep(float(0.3))
       os.system("clear")
       os.system("ping 1.1.1.1")
   
   
-  if pos=="3" or pos=="yt-dlp" or "Yt-dlp":
-    import yt_dlp
-    os.system('cls')
-    tot=int(input("""File type:
+  if pos=="3" or pos=="yt-dlp" or pos== "Yt-dlp":
+    if kok=="1" or kok=="Windows" or kok=="windows":
+        os.system("cls")
+    if kok=="2" or kok=="3" or kok== "mac" or kok=="Mac" or kok=="Linux" or kok=="linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch":
+        os.system("clear")
+    tot=input("""File type:
 1) mp3
 2) m4a
 3) flac
 4) mp4
-Select Number:"""))
+Select Number:""")
     xof= input("Input link:")
     if tot==(1):
       fox=(" -x --audio-format mp3 ")
@@ -196,7 +205,12 @@ Select Number:"""))
     
     if tot==(4):
       fox=(" --remux-video mp4")
-    os.system("cls")
+    
+    if kok=="1" or kok=="Windows" or kok=="windows":
+        os.system("cls")
+    
+    if kok=="2" or kok=="3" or kok== "mac" or kok=="Mac" or kok=="Linux" or kok=="linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch":
+        os.system("clear")
     os.system('yt-dlp' + fox + xof)
     
    
@@ -210,7 +224,10 @@ if a =="3" or a=="Clock" or a=="clock":
   import pyfiglet
   import time
   from pyfiglet import Figlet
-  os.system('cls')
+  if kok=="1" or kok=="Windows" or kok=="windows":
+        os.system("cls")
+  if kok=="2" or kok=="3" or kok== "mac" or kok=="Mac" or kok=="Linux" or kok=="linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch":
+        os.system("clear")
   while True:
     p= datetime.datetime.now()
     f= (datetime.datetime.strftime(p, '%H : %M : %S'))
@@ -239,9 +256,9 @@ Input Number:"""))
   print("\n")
   iou=0
   for iou in range(xyz):
-    if kok==(1):
+    if kok=="1" or kok=="windows" or kok== "Windows":
       os.system('copy ' +  zyc+xyc  +  zyc+str(iou)+xyc)
-    if kok==(3):
+    if kok=="linux" or kok=="Linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch" or kok=="3":
       os.system('cp ' +  zyc+xyc  +  zyc+str(iou)+xyc)
     iou +=1
     
@@ -267,7 +284,7 @@ if a=="5" or a=="Weather" or a=="weather":
      
   Gen_report(city_name)
 
-    #Not added to main list, simply for personal use or experminetal, doesnt always work all possible, this can also be editted to whatever you want 
+    #Not added to main list, simply for personal use or experminetal, doesnt always work, ll previsouly listed are possible reasons, this can also be editted to whatever you want 
 if a=="77":
   
     import pyautogui
@@ -279,24 +296,29 @@ if a=="77":
     time.sleep(1)
     pyautogui.click (900,450)
 
-if a=="22" or "screensaver":
+if a=="22" or a== "screensaver":
   import os.path
   iop = os.path.isfile("rain.sh")
   if iop==True:
-    if kok == (1):
+    if kok=="1" or kok=="windows" or kok== "Windows":
       os.system("bash rain.sh")
-    if kok==(2):
-      os.system("sh rain.sh")
-    if kok==(3):
+    if kok=="2" or kok=="mac" or kok=="Mac":
+      print("currently i have not seen mac with this module working im not sure if its wget/curl or if its the actual .sh script")
+      print("https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh this is the script that I use for the screensaver, if you get the file in the same folder then you can goahead and try to get this working and uncomment the previous")
+      #os.system("sh rain.sh")
+    if kok=="linux"or kok=="Linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch" or kok=="3":
       os.system("chmod +x ./rain.sh")
       os.system("./rain.sh")
   else:
+    
     os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
-    if kok == (1):
+    
+    if kok=="1" or kok=="windows" or kok== "Windows":
       os.system("bash rain.sh")
-    if kok==(2):
-      os.system("sh rain.sh")
-    if kok==(3):
+    if kok=="2" or kok=="mac" or kok=="Mac":
+      print("currently i have not seen mac with this module working im not sure if its wget/curl or if its the actual .sh script")
+      print("https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh this is the script that I use for the screensaver, if you get the file in the same folder then you can goahead and try to get this working and uncomment the previous")
+    if kok=="linux"or kok=="Linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch" or kok=="3":
       os.system("chmod +x ./rain.sh")
       os.system("./rain.sh")
     
