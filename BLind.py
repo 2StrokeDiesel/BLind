@@ -1,5 +1,11 @@
 import time
 import os
+try:
+  os.system("clear")
+except:
+  print("Incorrect command")
+else:
+  os.system("cls")
 print("""
      ...     ..            ..    .                     ..
   .=*8888x <"?88h.   x .d88"    @88>                 dF
@@ -283,20 +289,9 @@ if a=="5" or a=="Weather" or a=="weather":
       print(T)
      
   Gen_report(city_name)
-
-    #Not added to main list, simply for personal use or experminetal, doesnt always work, ll previsouly listed are possible reasons, this can also be editted to whatever you want 
-if a=="77":
   
-    import pyautogui
-    pyautogui.press("super")
-    time.sleep(0.25)
-    pyautogui.typewrite("pia")
-    time.sleep(0.25)
-    pyautogui.press("enter")
-    time.sleep(1)
-    pyautogui.click (900,450)
-
-if a=="22" or a== "screensaver":
+  
+if a=="6" or a== "screensaver":
   import os.path
   iop = os.path.isfile("rain.sh")
   if iop==True:
@@ -313,25 +308,32 @@ if a=="22" or a== "screensaver":
       os.system("chmod +x ./rain.sh")
       os.system("./rain.sh")
   
-else:
-    if kok=="2" or kok=="mac" or kok=="Mac":
-      print("currently i have not seen mac with this module working im not sure if its wget/curl or if its the actual .sh script")
-      print("https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh this is the script that I use for the screensaver, if you get the file in the same folder then you can goahead and try to get this working and uncomment the previous")
-    
-    else:
-      os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
+  else: 
+      if kok=="2" or kok=="mac" or kok=="Mac":
+        print("currently i have not seen mac with this module working im not sure if its wget/curl or if its the actual .sh script")
+        print("https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh this is the script that I use for the screensaver, if you get the file in the same folder then you can goahead and try to get this working and uncomment the previous")
     
       if kok=="1" or kok=="windows" or kok== "Windows":
+        os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
         os.system("bash rain.sh")
+        
       
       if kok=="linux"or kok=="Linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch" or kok=="3":
+        os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
         os.system("chmod +x ./rain.sh")
         os.system("./rain.sh")
-    
-    
-    
-    
-    
+
+    #Not added to main list, simply for personal use or experminetal, doesnt always work, ll previsouly listed are possible reasons, this can also be editted to whatever you want 
+if a=="77":
+  
+    import pyautogui
+    pyautogui.press("super")
+    time.sleep(0.25)
+    pyautogui.typewrite("pia")
+    time.sleep(0.25)
+    pyautogui.press("enter")
+    time.sleep(1)
+    pyautogui.click (900,450)
     
     
     
