@@ -370,10 +370,6 @@ if a=="77":
     
     
     
-    #Credits- One dumb motherfucker
-    #everbody else proably giving me ideas, friends that cant remeber commands worth shit
-    #hooked on a feeling for making me feeling productive 
     #https://tinyurl.com/bdfvbf8t
     #peace tea, good shit
-    
     #RG9uJ3QgeW91IGtub3cgSSdtIHN0aWxsIHN0YW5kaW4nIGJldHRlciB0aGFuIEkgZXZlciBkaWQ/Ckxvb2tpbicgbGlrZSBhIHRydWUgc3Vydml2b3IsIGZlZWxpbicgbGlrZSBhIGxpdHRsZSBraWQKQW5kIEknbSBzdGlsbCBzdGFuZGluJyBhZnRlciBhbGwgdGhpcyB0aW1lClBpY2tpbicgdXAgdGhlIHBpZWNlcyBvZiBteSBsaWZlIHdpdGhvdXQgeW91IG9uIG15IG1pbmQKCmh0dHBzOi8vaW1ndXIuY29tL2EvelB1VHdNdQ==
