@@ -200,16 +200,16 @@ compressed lossless, large file size""")
 4) mp4
 Select Number:""")
     xof= input("Input link:")
-    if tot==(1):
+    if tot=="1" or tot=="mp3" or tot=="Mp3":
       fox=(" -x --audio-format mp3 ")
     
-    if tot==(2):
+    if tot=="2" or tot== "m4a" or tot=="M4a":
       fox=(" -x --audio-format m4a ")
     
-    if tot==(3):
+    if tot=="3" or tot== "flac" or tot== "Flac":
       fox=(" -x --audio-format flac ")
     
-    if tot==(4):
+    if tot=="4" or tot=="mp4" or tot== "Mp4":
       fox=(" --remux-video mp4")
     
     if kok=="1" or kok=="Windows" or kok=="windows":
