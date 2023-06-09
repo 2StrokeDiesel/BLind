@@ -49,6 +49,8 @@ a = input ("""Modules:
 2)Cli Programs 
 3)Clock
 4)File Duplicator
+5) Weather
+99)Credits
 Select a number:""")
 print("""\n \n \n \n""")
 # Spamming tools
@@ -57,12 +59,12 @@ if a=="1" or a== "Spamming" or a== "spamming":
   x = input("Text to spam \n:")
   z = int(float(input("Delay, delay between each message being sent, 0.1 is tenth of a second 1 is a second \n:")))
   print("All of these have a 3 second delay before they start")
-  y = int(input("""
+  y = input("""
 1) Discord mode
 2) General mode
 3) Alarm mode
 4) Kamari mode
-5) Help \nMode selection:"""))
+5) Help \nMode selection:""")
   print("""\n \n \n \n""")
   
   
@@ -104,7 +106,7 @@ if a=="1" or a== "Spamming" or a== "spamming":
     k_int = int(k)
     today = datetime.datetime.now()
     sleep = (datetime.datetime(today.year, today.month, today.day, (o_int),(u_int)) - today).seconds
-    #This shits works now, i feel bad for people that might eventually work on this, may god be on your side, even i dont remember what I was doing 
+    #This shits works now, i dont remember what I was doing 
     print('time till start: ' + str(datetime.timedelta(seconds=sleep)))
     time.sleep(sleep)
     
@@ -120,8 +122,8 @@ if a=="1" or a== "Spamming" or a== "spamming":
     if y =="5" or y=="Help" or y=="help" or y== "HELP":
       print("""\n \n \n \n""")
     print("//Discord Mode \nThis version clicks on a specific area on the screen (900,1000 for those wonderin) and allows for discord to easily be spammed without needing to be clicked on after, this is for 1080p monitors, and given thats what the majority have including me thats what I set it to be for by default though it can always be changed \n \n" )
-    print("//General Mode \nVery simple module of this spammer, takes input and the time delay and starts repeating typing and enter 3 secodns after the input to start \n \n")  
-    print("//Alarm Mode \nTakes the user input for a specific time (hours and minutes) of when to start, this is determined by the package date and time which is required for this to work, this time then has the current time subtracted this will give time time until the spam starts, the user is also asked how long to spamm, this time is in minutes and is easily controlled by a simple ineger entered \n \n")
+    print("//General Mode \nVery simple module of this spammer, takes input and the time delay and starts repeating typing and enter 3 seconds after the input to start \n \n")  
+    print("//Alarm Mode \nTakes the user input for a specific time (hours and minutes) of when to start, this is determined by the package datetime which is required for this to work, this time then has the current time subtracted this will give time time until the spam starts, the user is also asked how long to spamm, this time is in minutes and is easily controlled by a simple ineger entered \n \n")
     print("//Kamari Mode \nSpecial mode for a friend that presess enter twice for japanese keyboards on mac")
 
 
@@ -322,6 +324,34 @@ if a=="6" or a== "screensaver":
         os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
         os.system("chmod +x ./rain.sh")
         os.system("./rain.sh")
+        
+if a=="99" or a== "Credits" or a== "credits":
+  import os
+  import sys
+  import random
+  print("""
+  d8b
+  88
+  88b
+  888888b ?88   d8P     d88888P  d8888b  d8888b   88bd8b,d88b ?88   d8P
+  88P `?8bd88   88         d8P' d8P' ?88d8P' ?88  88P'`?8P'?8bd88   88
+ d88,  d88?8(  d88       d8P'   88b  d8888b  d88 d88  d88  88P?8(  d88
+d88'`?88P'`?88P'?8b     d88888P'`?8888P'`?8888P'd88' d88'  88b`?88P'?8b
+                 )88                                                 )88
+                ,d8P                                                ,d8P
+             `?888P'                                              ?888P'""")
+print(" \n \n \n")
+
+text = """\x1B[3m Plan the future \n
+  Live In the present \n
+   Embrace the past"""
+
+for c in text:
+    sys.stdout.write(c)
+    sys.stdout.flush()
+    foo=[0.2, 0.1, 0.25, 0.4]
+    terminal= float(random.choice(foo))
+    time.sleep(terminal)
 
     #Not added to main list, simply for personal use or experminetal, doesnt always work, ll previsouly listed are possible reasons, this can also be editted to whatever you want 
 if a=="77":
