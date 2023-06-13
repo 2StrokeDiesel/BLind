@@ -340,18 +340,15 @@ d88'`?88P'`?88P'?8b     d88888P'`?8888P'`?8888P'd88' d88'  88b`?88P'?8b
                  )88                                                 )88
                 ,d8P                                                ,d8P
              `?888P'                                              ?888P'""")
-print(" \n \n \n")
+  print(" \n \n \n")
+  time.sleep(0.75)
+  print("Plan for the future")
+  time.sleep(0.75)
+  print(" Live in the present")
+  time.sleep(0.75)
+  print("  Embrace the past")
 
-text = """\x1B[3m Plan the future \n
-  Live In the present \n
-   Embrace the past"""
 
-for c in text:
-    sys.stdout.write(c)
-    sys.stdout.flush()
-    foo=[0.2, 0.1, 0.25, 0.4]
-    terminal= float(random.choice(foo))
-    time.sleep(terminal)
 
     #Not added to main list, simply for personal use or experminetal, doesnt always work, ll previsouly listed are possible reasons, this can also be editted to whatever you want 
 if a=="77":
@@ -364,7 +361,17 @@ if a=="77":
     pyautogui.press("enter")
     time.sleep(1)
     pyautogui.click (900,450)
-    
+if a=="55":
+  from bs4 import BeautifulSoup
+  import urllib.request
+
+  com = input("Website url:")
+  parser = 'html.parser'  # or 'lxml' (preferred) or 'html5lib', if installed
+  resp = urllib.request.urlopen((com))
+  soup = BeautifulSoup(resp, parser, from_encoding=resp.info().get_param('charset'))
+
+  for link in soup.find_all('a', href=True):
+      print(link['href'])
     
     
     
