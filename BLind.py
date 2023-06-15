@@ -159,14 +159,19 @@ compressed lossless, large file size""")
       fax=input("Spotify Link:")
       if pop=="1" or pop=="mp3":
         oop=("spotdl --audio youtube-music --format mp3 download ")
+      
       if pop=="2" or pop=="m4a":
         oop=("spotdl --audio youtube-music --format m4a download ")
+      
       if pop=="3" or pop=="flac":
         oop=("spotdl --audio youtube-music --format flac download ")
+      
       if kok=="1" or kok=="Windows" or kok=="windows":
         os.system("cls")
+      
       if kok=="2" or kok=="3" or kok== "mac" or kok=="Mac" or kok=="Linux" or kok=="linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch":
         os.system("clear")
+      
       pyautogui.press("super")
       time.sleep(0.5)
       pyautogui.typewrite ("terminal")
@@ -177,7 +182,7 @@ compressed lossless, large file size""")
       
   
 
-  if pos=="2" or pos=="Ping-Test" or pos=="ping-test" or pos=="Ping-test":
+  if pos=="2" or pos=="Ping-Test" or pos=="ping-test" or pos=="Ping-test" or pos== "Ping" or pos== "ping":
     if kok=="1" or kok=="windows" or kok== "Windows":
       os.system("cls")
       os.system("ping 1.1.1.1 -t")
@@ -266,10 +271,11 @@ Input Number:"""))
   for iou in range(xyz):
     if kok=="1" or kok=="windows" or kok== "Windows":
       os.system('copy ' +  zyc+xyc  +  zyc+str(iou)+xyc)
-    if kok=="linux" or kok=="Linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch" or kok=="3":
+    if kok=="linux" or kok=="Linux" or kok=="Ubuntu" or kok== "ubuntu" or kok== "fedora" or kok=="Fedora" or kok=="arch" or kok=="3" or kok=="2" or kok=="Mac" or kok== "mac":
       os.system('cp ' +  zyc+xyc  +  zyc+str(iou)+xyc)
     iou +=1
     
+
 
 #Weather 
 if a=="5" or a=="Weather" or a=="weather":
@@ -361,6 +367,7 @@ if a=="77":
     pyautogui.press("enter")
     time.sleep(1)
     pyautogui.click (900,450)
+
 if a=="55":
   from bs4 import BeautifulSoup
   import urllib.request
