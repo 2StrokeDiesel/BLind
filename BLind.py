@@ -50,6 +50,7 @@ a = input ("""Modules:
 3)Clock
 4)File Duplicator
 5) Weather
+6)Screensaver
 99)Credits
 Select a number:""")
 print("""\n \n \n \n""")
@@ -299,7 +300,7 @@ if a=="5" or a=="Weather" or a=="weather":
   Gen_report(city_name)
   
   
-if a=="6" or a== "screensaver":
+if a=="6" or a== "screensaver" or a=="Screensaver":
   import os.path
   iop = os.path.isfile("rain.sh")
   if iop==True:
@@ -320,7 +321,7 @@ if a=="6" or a== "screensaver":
       if kok=="2" or kok=="mac" or kok=="Mac":
         print("currently i have not seen mac with this module working im not sure if its wget/curl or if its the actual .sh script")
         print("https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh this is the script that I use for the screensaver, if you get the file in the same folder then you can goahead and try to get this working and uncomment the previous")
-    
+        #os.system("sh rain.sh")
       if kok=="1" or kok=="windows" or kok== "Windows":
         os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
         os.system("bash rain.sh")
@@ -330,7 +331,7 @@ if a=="6" or a== "screensaver":
         os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
         os.system("chmod +x ./rain.sh")
         os.system("./rain.sh")
-        
+#some credits likley that these will get slowly updated, something that isnt that important other than something fun to do when i get tired of othe stuff
 if a=="99" or a== "Credits" or a== "credits":
   import os
   import sys
