@@ -63,12 +63,6 @@ a = input ("""Modules:
 
 Select a number:""")
 print("""\n \n \n \n""")
-
-if a=="98" or a=="Experimental" or a== "experimental":
-  cup =input("""
-1) Link Scraper
-
-Input:""")
 # Spamming tools
 if a=="1" or a== "Spamming" or a== "spamming":
   import pyautogui
@@ -353,15 +347,15 @@ if a=="99" or a== "Credits" or a== "credits":
   import random
   print("""
   d8b
-  88
-  88b
-  888888b ?88   d8P     d88888P  d8888b  d8888b   88bd8b,d88b ?88   d8P
-  88P `?8bd88   88         d8P' d8P' ?88d8P' ?88  88P'`?8P'?8bd88   88
- d88,  d88?8(  d88       d8P'   88b  d8888b  d88 d88  d88  88P?8(  d88
-d88'`?88P'`?88P'?8b     d88888P'`?8888P'`?8888P'd88' d88'  88b`?88P'?8b
-                 )88                                                 )88
-                ,d8P                                                ,d8P
-             `?888P'                                              ?888P'""")
+  ?88
+   88b
+   888888b ?88   d8P      .d888b, d8888b  88bd88b d888b8b  ?88,.d88b,
+   88P `?8bd88   88       ?8b,   d8P' `P  88P'  `d8P' ?88  `?88'  ?88
+  d88,  d88?8(  d88         `?8b 88b     d88     88b  ,88b   88b  d8P
+ d88'`?88P'`?88P'?8b     `?888P' `?888P'd88'     `?88P'`88b  888888P'
+                 )88                                        88P'
+                ,d8P                                       d88
+             `?888P'                                       ?8P""")
   print(" \n \n \n")
   time.sleep(0.75)
   print("Plan for the future")
@@ -384,22 +378,27 @@ if a=="105":
     time.sleep(1)
     pyautogui.click (900,450)
 
-if cup=="1" or cup== "Link Scraper" or cup== "link scraper" or cup== "Link scraper" or cup== "link Scraper":
-  from bs4 import BeautifulSoup
-  import urllib.request
+if a=="98" or a== "experimental" or a== "Experimental":
+  cup = input("""
+1) Link scraper
 
-  com = input("Website url:")
-  parser = 'html.parser'  # or 'lxml' (preferred) or 'html5lib', if installed
-  resp = urllib.request.urlopen((com))
-  soup = BeautifulSoup(resp, parser, from_encoding=resp.info().get_param('charset'))
+Input:""")
+  if cup == ("1") or cup== ("Link scraper") or cup==(" link scraper") :
+    import urllib.request
+    from bs4 import BeautifulSoup
 
-  for link in soup.find_all('a', href=True):
-      print(link['href'])
+    com = input("Website url:")
+    parser = 'html.parser'  # or 'lxml' (preferred) or 'html5lib', if installed
+    resp = urllib.request.urlopen((com))
+    soup = BeautifulSoup(resp, parser, from_encoding=resp.info().get_param('charset'))
+
+    for link in soup.find_all('a', href=True):
+        print(link['href'])
     
     
     
     
     
-    #https://tinyurl.com/bdfvbf8t
-    #peace tea, good shit
-    #RG9uJ3QgeW91IGtub3cgSSdtIHN0aWxsIHN0YW5kaW4nIGJldHRlciB0aGFuIEkgZXZlciBkaWQ/Ckxvb2tpbicgbGlrZSBhIHRydWUgc3Vydml2b3IsIGZlZWxpbicgbGlrZSBhIGxpdHRsZSBraWQKQW5kIEknbSBzdGlsbCBzdGFuZGluJyBhZnRlciBhbGwgdGhpcyB0aW1lClBpY2tpbicgdXAgdGhlIHBpZWNlcyBvZiBteSBsaWZlIHdpdGhvdXQgeW91IG9uIG15IG1pbmQKCmh0dHBzOi8vaW1ndXIuY29tL2EvelB1VHdNdQ==
+#https://tinyurl.com/bdfvbf8t
+# #peace tea, good shit
+#2297575
