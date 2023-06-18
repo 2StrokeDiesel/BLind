@@ -45,15 +45,30 @@ Input OS:""")
 print("""\n \n \n \n""")
 
 a = input ("""Modules:
-1)Spamming
-2)Cli Programs 
-3)Clock
-4)File Duplicator
+1) Spamming
+
+2) Cli Programs 
+
+3) Clock
+
+4) File Duplicator
+
 5) Weather
-6)Screensaver
-99)Credits
+
+6) Screensaver
+
+98) Experimental
+
+99) Credits
+
 Select a number:""")
 print("""\n \n \n \n""")
+
+if a=="98" or a=="Experimental" or a== "experimental":
+  cup =input("""
+1) Link Scraper
+
+Input:""")
 # Spamming tools
 if a=="1" or a== "Spamming" or a== "spamming":
   import pyautogui
@@ -358,7 +373,7 @@ d88'`?88P'`?88P'?8b     d88888P'`?8888P'`?8888P'd88' d88'  88b`?88P'?8b
 
 
     #Not added to main list, simply for personal use or experminetal, doesnt always work, ll previsouly listed are possible reasons, this can also be editted to whatever you want 
-if a=="77":
+if a=="105":
   
     import pyautogui
     pyautogui.press("super")
@@ -369,7 +384,7 @@ if a=="77":
     time.sleep(1)
     pyautogui.click (900,450)
 
-if a=="55":
+if cup=="1" or cup== "Link Scraper" or cup== "link scraper" or cup== "Link scraper" or cup== "link Scraper":
   from bs4 import BeautifulSoup
   import urllib.request
 
