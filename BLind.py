@@ -1,10 +1,10 @@
-import time
 import os
+import time
 
 try:
     os.system("clear")
 except:
-    print("Incorrect command")
+    pass
 else:
     os.system("cls")
 print("""
@@ -84,15 +84,15 @@ if a == "1" or a == "Spamming" or a == "spamming":
         pyautogui.click(900, 1000)
         time.sleep(0.3)
         while True:
-            pyautogui.typewrite((x))
-            time.sleep((z))
+            pyautogui.typewrite(x)
+            time.sleep(z)
             pyautogui.press("enter")
 
     if y == "2" or y == "General" or y == "general" or y == "General Mode" or y == "general mode" or y == "General mode":
         time.sleep(3)
         while True:
-            pyautogui.typewrite((x))
-            time.sleep((z))
+            pyautogui.typewrite(x)
+            time.sleep(z)
             pyautogui.press("enter")
 
     if y == "4" or y == "Kamari Mode" or y == "Kamari" or y == "kamari" or y == "kamari mode" or y == "Kamari Mode":
@@ -100,14 +100,15 @@ if a == "1" or a == "Spamming" or a == "spamming":
         pyautogui.click(900, 1000)
         time.sleep(0.3)
         while True:
-            pyautogui.typewrite((x))
-            time.sleep((z))
+            pyautogui.typewrite(x)
+            time.sleep(z)
             pyautogui.press("enter")
             pyautogui.press("enter")
 
     if y == "3" or y == "alarm" or y == "Alarm" or y == "alarm mode" or y == "Alarm mode" or y == "Alarm Mode":
         time.sleep(3)
-        import datetime, time
+        import datetime
+        import time
 
         print("Hours in 24 hour format!")
         o = input("Hour of start \n:")
@@ -117,29 +118,29 @@ if a == "1" or a == "Spamming" or a == "spamming":
         o_int = int(o)
         k_int = int(k)
         today = datetime.datetime.now()
-        sleep = (datetime.datetime(today.year, today.month, today.day, (o_int), (u_int)) - today).seconds
+        sleep = (datetime.datetime(today.year, today.month, today.day, o_int, u_int) - today).seconds
         # This shits works now, i dont remember what I was doing
         print('time till start: ' + str(datetime.timedelta(seconds=sleep)))
         time.sleep(sleep)
 
         pyautogui.click(900, 1000)
         time.sleep(0.3)
-        t_end = time.time() + 60 * (k_int)
+        t_end = time.time() + 60 * k_int
         # things might work now, stfu i fixed it eventually
         while time.time() < t_end:
-            pyautogui.typewrite((x))
-            time.sleep((z))
+            pyautogui.typewrite(x)
+            time.sleep(z)
             pyautogui.press("enter")
 
         if y == "5" or y == "Help" or y == "help" or y == "HELP":
             print("""\n \n \n \n""")
         print(
-            "//Discord Mode \nThis version clicks on a specific area on the screen (900,1000 for those wonderin) and allows for discord to easily be spammed without needing to be clicked on after, this is for 1080p monitors, and given thats what the majority have including me thats what I set it to be for by default though it can always be changed \n \n")
+            '//Discord Mode \nThis version clicks on a specific area on the screen (900,1000 for those wonderin) and allows for discord to easily be spammed without needing to be clicked on after, this is for 1080p monitors, and given thats what the majority have including me thats what I set it to be for by default though it can always be changed \n \n')
         print(
             "//General Mode \nVery simple module of this spammer, takes input and the time delay and starts repeating typing and enter 3 seconds after the input to start \n \n")
         print(
             "//Alarm Mode \nTakes the user input for a specific time (hours and minutes) of when to start, this is determined by the package datetime which is required for this to work, this time then has the current time subtracted this will give time time until the spam starts, the user is also asked how long to spamm, this time is in minutes and is easily controlled by a simple ineger entered \n \n")
-        print("//Kamari Mode \nSpecial mode for a friend that presess enter twice for japanese keyboards on mac")
+        print("//Kamari Mode \nSpecial mode for a friend that presses enter twice for japanese keyboards on mac")
 
 # Command line tools / programs
 if a == "2" or a == "Cli program" or a == "cli programs" or a == "cli" or a == "Cli":
@@ -171,13 +172,13 @@ compressed lossless, large file size""")
 
         fax = input("Spotify Link:")
         if pop == "1" or pop == "mp3":
-            oop = ("spotdl --audio youtube-music --format mp3 download ")
+            oop = "spotdl --audio youtube-music --format mp3 download "
 
         if pop == "2" or pop == "m4a":
-            oop = ("spotdl --audio youtube-music --format m4a download ")
+            oop = "spotdl --audio youtube-music --format m4a download "
 
         if pop == "3" or pop == "flac":
-            oop = ("spotdl --audio youtube-music --format flac download ")
+            oop = "spotdl --audio youtube-music --format flac download "
 
         if kok == "1" or kok == "Windows" or kok == "windows":
             os.system("cls")
@@ -217,16 +218,16 @@ compressed lossless, large file size""")
 Select Number:""")
         xof = input("Input link:")
         if tot == "1" or tot == "mp3" or tot == "Mp3":
-            fox = (" -x --audio-format mp3 ")
+            fox = " -x --audio-format mp3 "
 
         if tot == "2" or tot == "m4a" or tot == "M4a":
-            fox = (" -x --audio-format m4a ")
+            fox = " -x --audio-format m4a "
 
         if tot == "3" or tot == "flac" or tot == "Flac":
-            fox = (" -x --audio-format flac ")
+            fox = " -x --audio-format flac "
 
         if tot == "4" or tot == "mp4" or tot == "Mp4":
-            fox = (" --remux-video mp4")
+            fox = " --remux-video mp4"
 
         if kok == "1" or kok == "Windows" or kok == "windows":
             os.system("cls")
@@ -254,11 +255,11 @@ if a == "3" or a == "Clock" or a == "clock":
         f = (datetime.datetime.strftime(p, '%H : %M : %S'))
         o_u = f
         i = Figlet(font='letters')
-        print(i.renderText((o_u)), end="")
+        print(i.renderText(o_u), end="")
         print('\033[6A\033[2K', end='')
         time.sleep(1)
-        # The \033[5A\033[2K allows for refresh with pyfiglet in without clearing, each font needs a differnt amount of room for clear so, changing the number 5a will change how many lines
-        # it clears, this is something that will needed to be editted by the eu but its not a big deal, maybe figure out a way to fix in future?
+        # The \033[5A\033[2K allows for refresh with pyfiglet in without clearing, each font needs a different amount of room for clear so, changing the number 5a will change how many lines
+        # it clears, this is something that will needed to be edited by the eu,but it's not a big deal, maybe figure out a way to fix in future?
 
         # File Duper
 if a == "4" or a == "Duplicator" or a == "file Duplicator" or a == "File Duplicator" or a == "File duplicator" or a == "duper" or a == "file duplicator":
@@ -370,13 +371,13 @@ if a == "98" or a == "experimental" or a == "Experimental":
 1) Link scraper
 
 Input:""")
-    if cup == ("1") or cup == ("Link scraper") or cup == (" link scraper"):
+    if cup == "1" or cup == "Link scraper" or cup == " link scraper":
         import urllib.request
         from bs4 import BeautifulSoup
 
         com = input("Website url:")
         parser = 'html.parser'  # or 'lxml' (preferred) or 'html5lib', if installed
-        resp = urllib.request.urlopen((com))
+        resp = urllib.request.urlopen(com)
         soup = BeautifulSoup(resp, parser, from_encoding=resp.info().get_param('charset'))
 
         for link in soup.find_all('a', href=True):
