@@ -119,14 +119,14 @@ if a == "1" or a == "Spamming" or a == "spamming":
         k_int = int(k)
         today = datetime.datetime.now()
         sleep = (datetime.datetime(today.year, today.month, today.day, o_int, u_int) - today).seconds
-        # This shits works now, i dont remember what I was doing
+        # This shits works now, I don't remember what I was doing
         print('time till start: ' + str(datetime.timedelta(seconds=sleep)))
         time.sleep(sleep)
 
         pyautogui.click(900, 1000)
         time.sleep(0.3)
         t_end = time.time() + 60 * k_int
-        # things might work now, stfu i fixed it eventually
+        # things might work now, stfu I fixed it eventually
         while time.time() < t_end:
             pyautogui.typewrite(x)
             time.sleep(z)
@@ -139,7 +139,7 @@ if a == "1" or a == "Spamming" or a == "spamming":
         print(
             "//General Mode \nVery simple module of this spammer, takes input and the time delay and starts repeating typing and enter 3 seconds after the input to start \n \n")
         print(
-            "//Alarm Mode \nTakes the user input for a specific time (hours and minutes) of when to start, this is determined by the package datetime which is required for this to work, this time then has the current time subtracted this will give time time until the spam starts, the user is also asked how long to spamm, this time is in minutes and is easily controlled by a simple ineger entered \n \n")
+            "//Alarm Mode \nTakes the user input for a specific time (hours and minutes) of when to start, this is determined by the package datetime which is required for this to work, this time then has the current time subtracted this will give time time until the spam starts, the user is also asked how long to spam, this time is in minutes and is easily controlled by a simple ineger entered \n \n")
         print("//Kamari Mode \nSpecial mode for a friend that presses enter twice for japanese keyboards on mac")
 
 # Command line tools / programs
@@ -339,7 +339,7 @@ if a == "6" or a == "screensaver" or a == "Screensaver":
             os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
             os.system("chmod +x ./rain.sh")
             os.system("./rain.sh")
-# some credits likley that these will get slowly updated, something that isnt that important other than something fun to do when i get tired of othe stuff
+# some credits likely that these will get slowly updated, something that isn't that important other than something fun to do when i get tired of other stuff
 if a == "99" or a == "Credits" or a == "credits":
     import os
     import sys
@@ -386,3 +386,5 @@ Input:""")
 # https://tinyurl.com/bdfvbf8t
 # #peace tea, good shit
 # 2297575
+
+
