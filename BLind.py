@@ -382,6 +382,28 @@ Input:""")
 
         for link in soup.find_all('a', href=True):
             print(link['href'])
+            
+if a =="67":
+    import vlc
+    import time
+    url = "https://24503.live.streamtheworld.com/977_HITSAAC_SC?dist=onlineradiobox"
+
+    #define VLC instance
+    instance = vlc.Instance('--fullscreen')
+
+    #Define VLC player
+    player=instance.media_player_new()
+
+    #Define VLC media
+    media=instance.media_new(url)
+
+    #Set player media
+    player.set_media(media)
+
+    #Play the media
+    player.play()
+    while True:
+        pass
 
 # https://tinyurl.com/bdfvbf8t
 # #peace tea, good shit
