@@ -366,17 +366,7 @@ if a=="99" or a== "Credits" or a== "credits":
 
 
 
-    #Not added to main list, simply for personal use or experminetal, doesnt always work, ll previsouly listed are possible reasons, this can also be editted to whatever you want 
-if a=="105":
-  
-    import pyautogui
-    pyautogui.press("super")
-    time.sleep(0.25)
-    pyautogui.typewrite("pia")
-    time.sleep(0.25)
-    pyautogui.press("enter")
-    time.sleep(1)
-    pyautogui.click (900,450)
+    #Experimental
 
 if a=="98" or a== "experimental" or a== "Experimental":
   cup = input("""
@@ -394,7 +384,6 @@ Input:""")
 
     for link in soup.find_all('a', href=True):
         print(link['href'])
-    
     
     
     
