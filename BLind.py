@@ -153,7 +153,7 @@ if a == "2" or a == "Cli program" or a == "cli programs" or a == "cli" or a == "
 3)yt-dlp-scripts
 
 Select Module:""")
-    if pos == "spotdl-scripts" or pos == "Spotdl-scripts" or pos == "spotdl" or pos == "Spotdl" or pos == "Spotdl-Scripts" or pos == "spotdl-Scripts":
+    if pos == "spotdl-scripts" or pos == "Spotdl-scripts" or pos == "spotdl" or pos == "Spotdl" or pos == "Spotdl-Scripts" or pos == "spotdl-Scripts" or pos == "1":
         pop = input("""File Type:
 1) mp3
 2) m4a
@@ -344,7 +344,7 @@ if a == "99" or a == "Credits" or a == "credits":
     import os
     import sys
     import random
-
+    import time
     print("""
   d8b
   ?88
@@ -356,20 +356,23 @@ if a == "99" or a == "Credits" or a == "credits":
                  )88                                        88P'
                 ,d8P                                       d88
              `?888P'                                       ?8P""")
-    print(" \n \n \n")
-    time.sleep(0.75)
-    print("Plan for the future")
-    time.sleep(0.75)
-    print(" Live in the present")
-    time.sleep(0.75)
-    print("  Embrace the past")
-
+    print("\n")
+    words = """Plan for the future
+  Live in the present
+   Embrace the past"""
+    for char in words:
+       foo=[0.2, 0.25, 0.1, 0.275, 0.3, 0.5]
+       time.sleep(random.choice(foo))
+       sys.stdout.write(char)
+       sys.stdout.flush()
+    print("\n")
     # Experimental
+    
 
 if a == "98" or a == "experimental" or a == "Experimental":
     cup = input("""
 1) Link scraper
-
+2) I Heart Radio active streaming link scraper
 Input:""")
     if cup == "1" or cup == "Link scraper" or cup == " link scraper":
         import urllib.request
@@ -386,27 +389,43 @@ Input:""")
 if a =="67":
     import vlc
     import time
-    url = "https://24503.live.streamtheworld.com/977_HITSAAC_SC?dist=onlineradiobox"
+    url = "https://n2da-e2.revma.ihrhls.com/zc4289"
 
-    #define VLC instance
+    # define VLC instance
     instance = vlc.Instance('--fullscreen')
 
-    #Define VLC player
+    # Define VLC player
     player=instance.media_player_new()
 
-    #Define VLC media
+    # Define VLC media
     media=instance.media_new(url)
 
-    #Set player media
+    # Set player media
     player.set_media(media)
 
     #Play the media
     player.play()
     while True:
         pass
+if cup=="2" or cup== "Ihr" or cup=="I heart radio" or cup =="i heart radio" or cup=="I Heart Radio active streaming link scraper":
+    print("personal use but can be modified by end user, in experimental as i heart radio scraper")
+    i=0
+    import os
+    kjo= int(input("How many possibilites? :"))
+    okj= input("Output file name : ")
+    while i<=kjo: 
+        os.system('wget --spider --save-headers --append-output ' + str(okj)+ '.txt' + ' https://ample.revma.ihrhls.com/zc'+str(i))
+        i +=1
+        
+if a=="205":
+    import sys
+    from time import sleep
 
+    words = "This is just a test :P"
+    for char in words:
+        sleep(0.5)
+        sys.stdout.write(char)
+        sys.stdout.flush()
 # https://tinyurl.com/bdfvbf8t
 # #peace tea, good shit
 # 2297575
-
-
