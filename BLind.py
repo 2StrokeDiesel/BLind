@@ -414,7 +414,7 @@ if cup=="2" or cup== "Ihr" or cup=="I heart radio" or cup =="i heart radio" or c
     kjo= int(input("How many possibilites? :"))
     okj= input("Output file name : ")
     while i<=kjo: 
-        os.system('wget --spider --save-headers --append-output ' + str(okj)+ '.txt' + ' https://ample.revma.ihrhls.com/zc'+str(i))
+        os.system('wget --spider --save-headers -nv --append-output ' + str(okj)+ '.txt' + ' https://ample.revma.ihrhls.com/zc'+str(i))
         i +=1
         
 if a=="205":
