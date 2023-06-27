@@ -371,6 +371,8 @@ if a == "98" or a == "experimental" or a == "Experimental":
     cup = input("""
 1) Link scraper
 2) I Heart Radio active streaming link scraper
+3) Radio
+4) beatstars ripper
 Input:""")
     if cup == "1" or cup == "Link scraper" or cup == " link scraper":
         import urllib.request
@@ -391,10 +393,9 @@ Input:""")
         kjo = int(input("How many possibilities? :"))
         okj = input("Output file name : ")
         while i <= kjo:
-            os.system('wget --spider --save-headers -nv --append-output ' + str(
-                okj) + '.txt' + ' https://ample.revma.ihrhls.com/zc' + str(i))
+            os.system('wget --spider --save-headers -nv --append-output ' + str(okj) + '.txt' + ' https://ample.revma.ihrhls.com/zc' + str(i))
             i += 1
-    if cup =="3" or cup=="radio" or cup== "Radio":
+    if cup == "3" or cup == "radio" or cup == "Radio":
         import vlc
         import time
 
