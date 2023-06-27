@@ -345,6 +345,7 @@ if a == "99" or a == "Credits" or a == "credits":
     import sys
     import random
     import time
+
     print("""
   d8b
   ?88
@@ -361,13 +362,12 @@ if a == "99" or a == "Credits" or a == "credits":
   Live in the present
    Embrace the past"""
     for char in words:
-       foo=[0.2, 0.25, 0.1, 0.275, 0.3, 0.5]
-       time.sleep(random.choice(foo))
-       sys.stdout.write(char)
-       sys.stdout.flush()
+        foo = [0.2, 0.25, 0.1, 0.275, 0.3, 0.5]
+        time.sleep(random.choice(foo))
+        sys.stdout.write(char)
+        sys.stdout.flush()
     print("\n")
     # Experimental
-    
 
 if a == "98" or a == "experimental" or a == "Experimental":
     cup = input("""
@@ -385,39 +385,41 @@ Input:""")
 
         for link in soup.find_all('a', href=True):
             print(link['href'])
-            
-if a =="67":
+    if cup == "2" or cup == "Ihr" or cup == "I heart radio" or cup == "i heart radio" or cup == "I Heart Radio active streaming link scraper":
+        print("personal use but can be modified by end user, in experimental as i heart radio scraper")
+        i = 0
+        import os
+
+        kjo = int(input("How many possibilites? :"))
+        okj = input("Output file name : ")
+        while i <= kjo:
+            os.system('wget --spider --save-headers -nv --append-output ' + str(
+                okj) + '.txt' + ' https://ample.revma.ihrhls.com/zc' + str(i))
+            i += 1
+if a == "67":
     import vlc
     import time
+
     url = "https://n2da-e2.revma.ihrhls.com/zc4289"
 
     # define VLC instance
     instance = vlc.Instance('--fullscreen')
 
     # Define VLC player
-    player=instance.media_player_new()
+    player = instance.media_player_new()
 
     # Define VLC media
-    media=instance.media_new(url)
+    media = instance.media_new(url)
 
     # Set player media
     player.set_media(media)
 
-    #Play the media
+    # Play the media
     player.play()
     while True:
         pass
-if cup=="2" or cup== "Ihr" or cup=="I heart radio" or cup =="i heart radio" or cup=="I Heart Radio active streaming link scraper":
-    print("personal use but can be modified by end user, in experimental as i heart radio scraper")
-    i=0
-    import os
-    kjo= int(input("How many possibilites? :"))
-    okj= input("Output file name : ")
-    while i<=kjo: 
-        os.system('wget --spider --save-headers -nv --append-output ' + str(okj)+ '.txt' + ' https://ample.revma.ihrhls.com/zc'+str(i))
-        i +=1
-        
-if a=="205":
+
+if a == "205":
     import sys
     from time import sleep
 
@@ -426,8 +428,58 @@ if a=="205":
         sleep(0.5)
         sys.stdout.write(char)
         sys.stdout.flush()
+
+if a == "206":
+    fuckface = input("beatstars stream link, take (prefix after id)_000.ts OFF!")
+    bighead = input("prefix")
+    dickbag = int(input('approximately how many .ts files? (verys per song, each .ts is 10 seconds)'))
+    i = 0
+    while i <= dickbag:
+        if i < 10:
+            os.system('wget -nv ' + str(fuckface) + str(bighead) + "_00" + str(i) + ".ts")
+            i += 1
+        if i > 9:
+            os.system('wget -nv ' + str(fuckface) + str(bighead) + "_0" + str(i) + ".ts")
+            i += 1
+        if i > 99:
+            os.system('wget -nv ' + str(fuckface) + str(bighead) + "_" + str(i) + ".ts")
+            i += 1
+        if i == dickbag + 1:
+            import pyautogui
+
+            pyautogui.confirm("REMOVE ALL .TS FILES FROM BLIND FOLDER, once done press confirm")
+            killmenow = int(input("How many .ts files are there downloaded"))
+            Ihatethisgodforsakenwebsite = input("song name")
+            ihatethis = input("BLind.py File location")
+            itwo = 0
+            pyautogui.press("super")
+            time.sleep(1)
+            pyautogui.typewrite("cmd")
+            time.sleep(0.5)
+            pyautogui.press("enter")
+            time.sleep(2)
+            pyautogui.typewrite("cd " + ihatethis)
+            pyautogui.press("enter")
+            pyautogui.typewrite('ffmpeg -i "concat:')
+            while itwo < killmenow:
+                if itwo < 10:
+                    pyautogui.typewrite(bighead + "_00" + str(itwo) + ".ts|")
+                    itwo += 1
+
+                if itwo > 9:
+                    pyautogui.typewrite(bighead + "_0" + str(itwo) + ".ts|")
+                    itwo += 1
+                if itwo == killmenow:
+                    pyautogui.typewrite(bighead + '_0' + str(itwo) + '.ts" ')
+                    pyautogui.typewrite(Ihatethisgodforsakenwebsite + '.m4a')
+                    time.sleep(0.3)
+                    pyautogui.press("enter")
+                    time.sleep(10)
+                    pyautogui.alert("once ffmpeg is done press ok")
+                    pyautogui.typewrite('del ' + '*.ts')
+                    pyautogui.press('enter')
+
 # https://tinyurl.com/bdfvbf8t
 # #peace tea, good shit
-#0150150
+# 0150150
 # 2297575
-#ihateidessometimes
