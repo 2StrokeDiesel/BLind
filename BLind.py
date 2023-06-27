@@ -37,10 +37,10 @@ print("""
 |_____||____|___._|__|__|_____|    |_____|___  |
                                          |_____|""")
 
-kok = input("""Select Opperating system (wont be used for all modules)
+kok = input("""Select Operating system (wont be used for all modules)
 1) Windows
 2) Mac
-3) Linux(Highly Unlikley most of this works and what does will be on fedora)
+3) Linux(Highly Unlikely most of this works and what does will be on fedora)
 
 Input OS:""")
 print("""\n \n \n \n""")
@@ -135,11 +135,11 @@ if a == "1" or a == "Spamming" or a == "spamming":
         if y == "5" or y == "Help" or y == "help" or y == "HELP":
             print("""\n \n \n \n""")
         print(
-            '//Discord Mode \nThis version clicks on a specific area on the screen (900,1000 for those wonderin) and allows for discord to easily be spammed without needing to be clicked on after, this is for 1080p monitors, and given thats what the majority have including me thats what I set it to be for by default though it can always be changed \n \n')
+            '//Discord Mode \nThis version clicks on a specific area on the screen (900,1000 for those wondering) and allows for discord to easily be spammed without needing to be clicked on after, this is for 1080p monitors, and given thats what the majority have including me thats what I set it to be for by default though it can always be changed \n \n')
         print(
             "//General Mode \nVery simple module of this spammer, takes input and the time delay and starts repeating typing and enter 3 seconds after the input to start \n \n")
         print(
-            "//Alarm Mode \nTakes the user input for a specific time (hours and minutes) of when to start, this is determined by the package datetime which is required for this to work, this time then has the current time subtracted this will give time time until the spam starts, the user is also asked how long to spam, this time is in minutes and is easily controlled by a simple ineger entered \n \n")
+            "//Alarm Mode \nTakes the user input for a specific time (hours and minutes) of when to start, this is determined by the package datetime which is required for this to work, this time then has the current time subtracted this will give time time until the spam starts, the user is also asked how long to spam, this time is in minutes and is easily controlled by a simple integer entered \n \n")
         print("//Kamari Mode \nSpecial mode for a friend that presses enter twice for japanese keyboards on mac")
 
 # Command line tools / programs
@@ -242,7 +242,6 @@ Select Number:""")
 if a == "3" or a == "Clock" or a == "clock":
     import pyautogui
     import datetime
-    import pyfiglet
     import time
     from pyfiglet import Figlet
 
@@ -259,7 +258,7 @@ if a == "3" or a == "Clock" or a == "clock":
         print('\033[6A\033[2K', end='')
         time.sleep(1)
         # The \033[5A\033[2K allows for refresh with pyfiglet in without clearing, each font needs a different amount of room for clear so, changing the number 5a will change how many lines
-        # it clears, this is something that will needed to be edited by the eu,but it's not a big deal, maybe figure out a way to fix in future?
+        # it clears, this is something that will be needed to be edited by the eu,but it's not a big deal, maybe figure out a way to fix in future?
 
         # File Duper
 if a == "4" or a == "Duplicator" or a == "file Duplicator" or a == "File Duplicator" or a == "File duplicator" or a == "duper" or a == "file duplicator":
@@ -269,7 +268,7 @@ if a == "4" or a == "Duplicator" or a == "file Duplicator" or a == "File Duplica
     print("\n")
     xyc = input("File extension (Type as .txt or .mp4) *ADD A SPACE ON END \n Input Extension:")
     print("\n")
-    xyz = int(input("""How Many Coppies?
+    xyz = int(input("""How Many Copies?
 Input Number:"""))
     print("\n")
     iou = 0
@@ -290,8 +289,7 @@ if a == "5" or a == "Weather" or a == "weather":
     city_name = input("Enter the name of the City : ")
     print("\n\n")
 
-
-    # Function to Generate Report
+# Function to Generate Report
     def Gen_report(C):
         url = 'https://wttr.in/{}'.format(C)
         try:
@@ -308,7 +306,7 @@ if a == "6" or a == "screensaver" or a == "Screensaver":
     import os.path
 
     iop = os.path.isfile("rain.sh")
-    if iop == True:
+    if iop:
 
         if kok == "1" or kok == "windows" or kok == "Windows":
             os.system("bash rain.sh")
@@ -339,7 +337,7 @@ if a == "6" or a == "screensaver" or a == "Screensaver":
             os.system("wget https://raw.githubusercontent.com/lbgists/rain.sh/master/rain.sh")
             os.system("chmod +x ./rain.sh")
             os.system("./rain.sh")
-# some credits likely that these will get slowly updated, something that isn't that important other than something fun to do when i get tired of other stuff
+# some credits likely that these will get slowly updated, something that isn't that important other than something fun to do when I get tired of other stuff
 if a == "99" or a == "Credits" or a == "credits":
     import os
     import sys
@@ -390,94 +388,84 @@ Input:""")
         i = 0
         import os
 
-        kjo = int(input("How many possibilites? :"))
+        kjo = int(input("How many possibilities? :"))
         okj = input("Output file name : ")
         while i <= kjo:
             os.system('wget --spider --save-headers -nv --append-output ' + str(
                 okj) + '.txt' + ' https://ample.revma.ihrhls.com/zc' + str(i))
             i += 1
-if a == "67":
-    import vlc
-    import time
+    if cup =="3" or cup=="radio" or cup== "Radio":
+        import vlc
+        import time
 
-    url = "https://n2da-e2.revma.ihrhls.com/zc4289"
+        url = "https://ample.revma.ihrhls.com/zc4289"
 
     # define VLC instance
-    instance = vlc.Instance('--fullscreen')
+        instance = vlc.Instance('--fullscreen')
 
     # Define VLC player
-    player = instance.media_player_new()
+        player = instance.media_player_new()
 
     # Define VLC media
-    media = instance.media_new(url)
+        media = instance.media_new(url)
 
     # Set player media
-    player.set_media(media)
+        player.set_media(media)
 
     # Play the media
-    player.play()
-    while True:
-        pass
+        player.play()
+        while True:
+            pass
 
-if a == "205":
-    import sys
-    from time import sleep
+    if cup == "4" or cup == "beatstars ripper" or cup == "Beatstars ripper" or cup== "Beatstars Ripper":
+        fuckface = input("beatstars stream link, take (prefix after id)_000.ts OFF!")
+        bighead = input("prefix")
+        dickbag = int(input('approximately how many .ts files? (verys per song, each .ts is 10 seconds)'))
+        i = 0
+        while i <= dickbag:
+            if i < 10:
+                os.system('wget -nv ' + str(fuckface) + str(bighead) + "_00" + str(i) + ".ts")
+                i += 1
+            if i > 9:
+                os.system('wget -nv ' + str(fuckface) + str(bighead) + "_0" + str(i) + ".ts")
+                i += 1
+            if i > 99:
+                os.system('wget -nv ' + str(fuckface) + str(bighead) + "_" + str(i) + ".ts")
+                i += 1
+            if i == dickbag + 1:
+                import pyautogui
 
-    words = "This is just a test :P"
-    for char in words:
-        sleep(0.5)
-        sys.stdout.write(char)
-        sys.stdout.flush()
+                pyautogui.confirm("REMOVE ALL .TS FILES (beside song downloaded) FROM BLIND FOLDER, once done press confirm/ ok")
+                killmenow = int(input("How many .ts files are there downloaded"))
+                Ihatethisgodforsakenwebsite = input("song name")
+                ihatethis = input("BLind.py File location")
+                itwo = 0
+                pyautogui.press("super")
+                time.sleep(1)
+                pyautogui.typewrite("cmd")
+                time.sleep(0.5)
+                pyautogui.press("enter")
+                time.sleep(2)
+                pyautogui.typewrite("cd " + ihatethis)
+                pyautogui.press("enter")
+                pyautogui.typewrite('ffmpeg -i "concat:')
+                while itwo < killmenow:
+                    if itwo < 10:
+                        pyautogui.typewrite(bighead + "_00" + str(itwo) + ".ts|")
+                        itwo += 1
 
-if a == "206":
-    fuckface = input("beatstars stream link, take (prefix after id)_000.ts OFF!")
-    bighead = input("prefix")
-    dickbag = int(input('approximately how many .ts files? (verys per song, each .ts is 10 seconds)'))
-    i = 0
-    while i <= dickbag:
-        if i < 10:
-            os.system('wget -nv ' + str(fuckface) + str(bighead) + "_00" + str(i) + ".ts")
-            i += 1
-        if i > 9:
-            os.system('wget -nv ' + str(fuckface) + str(bighead) + "_0" + str(i) + ".ts")
-            i += 1
-        if i > 99:
-            os.system('wget -nv ' + str(fuckface) + str(bighead) + "_" + str(i) + ".ts")
-            i += 1
-        if i == dickbag + 1:
-            import pyautogui
-
-            pyautogui.confirm("REMOVE ALL .TS FILES FROM BLIND FOLDER, once done press confirm")
-            killmenow = int(input("How many .ts files are there downloaded"))
-            Ihatethisgodforsakenwebsite = input("song name")
-            ihatethis = input("BLind.py File location")
-            itwo = 0
-            pyautogui.press("super")
-            time.sleep(1)
-            pyautogui.typewrite("cmd")
-            time.sleep(0.5)
-            pyautogui.press("enter")
-            time.sleep(2)
-            pyautogui.typewrite("cd " + ihatethis)
-            pyautogui.press("enter")
-            pyautogui.typewrite('ffmpeg -i "concat:')
-            while itwo < killmenow:
-                if itwo < 10:
-                    pyautogui.typewrite(bighead + "_00" + str(itwo) + ".ts|")
-                    itwo += 1
-
-                if itwo > 9:
-                    pyautogui.typewrite(bighead + "_0" + str(itwo) + ".ts|")
-                    itwo += 1
-                if itwo == killmenow:
-                    pyautogui.typewrite(bighead + '_0' + str(itwo) + '.ts" ')
-                    pyautogui.typewrite(Ihatethisgodforsakenwebsite + '.m4a')
-                    time.sleep(0.3)
-                    pyautogui.press("enter")
-                    time.sleep(10)
-                    pyautogui.alert("once ffmpeg is done press ok")
-                    pyautogui.typewrite('del ' + '*.ts')
-                    pyautogui.press('enter')
+                    if itwo > 9:
+                        pyautogui.typewrite(bighead + "_0" + str(itwo) + ".ts|")
+                        itwo += 1
+                    if itwo == killmenow:
+                        pyautogui.typewrite(bighead + '_0' + str(itwo) + '.ts" ')
+                        pyautogui.typewrite(Ihatethisgodforsakenwebsite + '.m4a')
+                        time.sleep(0.3)
+                        pyautogui.press("enter")
+                        time.sleep(10)
+                        pyautogui.alert("once ffmpeg is done press ok")
+                        pyautogui.typewrite('del ' + '*.ts')
+                        pyautogui.press('enter')
 
 # https://tinyurl.com/bdfvbf8t
 # #peace tea, good shit
