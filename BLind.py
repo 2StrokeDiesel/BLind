@@ -419,9 +419,10 @@ Input:""")
             pass
 
     if cup == "4" or cup == "beatstars ripper" or cup == "Beatstars ripper" or cup== "Beatstars Ripper":
-        fuckface = input("beatstars stream link, take (prefix after id)_000.ts OFF!")
-        bighead = input("prefix")
-        dickbag = int(input('approximately how many .ts files? (verys per song, each .ts is 10 seconds)'))
+        fuckface = input("""beatstars stream link, take (prefix after id)_000.ts OFF!
+        input: """)
+        bighead = input("prefix: ")
+        dickbag = int(input('approximately how many .ts files? (varys per song, each .ts is 10 seconds) : '))
         i = 0
         while i <= dickbag:
             if i < 10:
@@ -440,10 +441,12 @@ Input:""")
                 killmenow = int(input("How many .ts files are there downloaded"))
                 Ihatethisgodforsakenwebsite = input("song name")
                 ihatethis = input("BLind.py File location")
+                twoAM= input("What shell Do you want to use? : ")
+                # very obviously can be changed to a single command but i wanted the user to have the option for what shell to use
                 itwo = 0
                 pyautogui.press("super")
                 time.sleep(1)
-                pyautogui.typewrite("cmd")
+                pyautogui.typewrite(twoAM)
                 time.sleep(0.5)
                 pyautogui.press("enter")
                 time.sleep(2)
