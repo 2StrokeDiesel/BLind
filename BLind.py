@@ -167,7 +167,8 @@ if a == "2" or a == "Cli program" or a == "cli programs" or a == "cli" or a == "
 3)yt-dlp-scripts
 
 Select Module:""")
-    if pos == "spotdl-scripts" or pos == "Spotdl-scripts" or pos == "spotdl" or pos == "Spotdl" or pos == "Spotdl-Scripts" or pos == "spotdl-Scripts" or pos == "1":
+    poslist= ("3", "alarm", "Alarm", "alarm mode", "Alarm mode", "Alarm Mode")
+    if pos in poslist:
         pop = input("""File Type:
 1) mp3
 2) m4a
