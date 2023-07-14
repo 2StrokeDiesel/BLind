@@ -1,12 +1,14 @@
 import os
 import time
 
-try:
-    os.system("clear")
-except:
-    pass
-else:
-    os.system("cls")
+def clear():
+    try:
+        os.system("clear")
+    except:
+        pass
+    else:
+        os.system("cls")
+clear()
 print("""
      ...     ..            ..    .                     ..
   .=*8888x <"?88h.   x .d88"    @88>                 dF
@@ -44,6 +46,14 @@ kok = input("""Select Operating system (wont be used for all modules)
 
 Input OS:""")
 print("""\n \n \n \n""")
+koklist =("1", "2", "3" "windows", "Windows", "mac", "Mac", "fedora" "Fedora" "Linux" "linux" "arch" "Arch")
+if kok in koklist:
+    print("Horray it works")
+else:
+    clear()
+    print("Looks like you entered a invalid input, you may have to restart the script, some issue may occur")
+    time.sleep(3)
+    clear()
 
 a = input("""Modules:
 1) Spamming
@@ -78,8 +88,10 @@ if a == "1" or a == "Spamming" or a == "spamming":
 4) Kamari mode
 5) Help \nMode selection:""")
     print("""\n \n \n \n""")
-
-    if y == "1" or y == "Discord" or y == "discord" or y == "Discord Mode" or y == "Discord mode" or y == "discord mode":
+    dislist = ("1", "Discord", "discord", "Discord Mode", "Discord mode", "discord mode")
+    if y in dislist:
+        clear()
+        print("Discord Mode Selected!")
         time.sleep(3)
         pyautogui.click(900, 1000)
         time.sleep(0.3)
@@ -87,15 +99,17 @@ if a == "1" or a == "Spamming" or a == "spamming":
             pyautogui.typewrite(x)
             time.sleep(z)
             pyautogui.press("enter")
-
-    if y == "2" or y == "General" or y == "general" or y == "General Mode" or y == "general mode" or y == "General mode":
+    genmodlist =("2", "General", "general", "General Mode", "general mode", "General mode")
+    if y in genmodlist:
+        clear()
+        print("General Mode Selected!")
         time.sleep(3)
         while True:
             pyautogui.typewrite(x)
             time.sleep(z)
             pyautogui.press("enter")
-
-    if y == "4" or y == "Kamari Mode" or y == "Kamari" or y == "kamari" or y == "kamari mode" or y == "Kamari Mode":
+    kamlist = ("4", "Kamari Mode", "Kamari", "kamari", "kamari mode", "Kamari Mode")
+    if y in kamlist:
         time.sleep(3)
         pyautogui.click(900, 1000)
         time.sleep(0.3)
@@ -104,8 +118,8 @@ if a == "1" or a == "Spamming" or a == "spamming":
             time.sleep(z)
             pyautogui.press("enter")
             pyautogui.press("enter")
-
-    if y == "3" or y == "alarm" or y == "Alarm" or y == "alarm mode" or y == "Alarm mode" or y == "Alarm Mode":
+    alarmlist =("3", "alarm", "Alarm", "alarm mode", "Alarm mode", "Alarm Mode")
+    if y in alarmlist:
         time.sleep(3)
         import datetime
         import time
@@ -180,11 +194,7 @@ compressed lossless, large file size""")
         if pop == "3" or pop == "flac":
             oop = "spotdl --audio youtube-music --format flac download "
 
-        if kok == "1" or kok == "Windows" or kok == "windows":
-            os.system("cls")
-
-        if kok == "2" or kok == "3" or kok == "mac" or kok == "Mac" or kok == "Linux" or kok == "linux" or kok == "Ubuntu" or kok == "ubuntu" or kok == "fedora" or kok == "Fedora" or kok == "arch":
-            os.system("clear")
+        clear()
 
         pyautogui.press("super")
         time.sleep(0.5)
@@ -206,10 +216,7 @@ compressed lossless, large file size""")
             os.system("ping 1.1.1.1")
 
     if pos == "3" or pos == "yt-dlp" or pos == "Yt-dlp":
-        if kok == "1" or kok == "Windows" or kok == "windows":
-            os.system("cls")
-        if kok == "2" or kok == "3" or kok == "mac" or kok == "Mac" or kok == "Linux" or kok == "linux" or kok == "Ubuntu" or kok == "ubuntu" or kok == "fedora" or kok == "Fedora" or kok == "arch":
-            os.system("clear")
+        clear()
         tot = input("""File type:
 1) mp3
 2) m4a
@@ -229,11 +236,8 @@ Select Number:""")
         if tot == "4" or tot == "mp4" or tot == "Mp4":
             fox = " --remux-video mp4"
 
-        if kok == "1" or kok == "Windows" or kok == "windows":
-            os.system("cls")
+        clear()
 
-        if kok == "2" or kok == "3" or kok == "mac" or kok == "Mac" or kok == "Linux" or kok == "linux" or kok == "Ubuntu" or kok == "ubuntu" or kok == "fedora" or kok == "Fedora" or kok == "arch":
-            os.system("clear")
         os.system('yt-dlp' + fox + xof)
 
 # patwang
