@@ -197,7 +197,7 @@ compressed lossless, large file size""")
 
         clear()
 
-        pyautogui.press("super")
+        pyautogui.press("winleft")
         time.sleep(0.5)
         pyautogui.typewrite("terminal")
         pyautogui.press("enter")
@@ -449,7 +449,7 @@ Input:""")
                 twoAM= input("What shell Do you want to use? : ")
                 # very obviously can be changed to a single command but i wanted the user to have the option for what shell to use
                 itwo = 0
-                pyautogui.press("super")
+                pyautogui.press("winleft")
                 time.sleep(1)
                 pyautogui.typewrite(twoAM)
                 time.sleep(0.5)
